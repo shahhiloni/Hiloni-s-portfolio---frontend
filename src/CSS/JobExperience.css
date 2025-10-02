@@ -1,0 +1,152 @@
+.job-experience {
+  font-family: 'Poppins', sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.job-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.job-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.linkedin-btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border: 1px solid #0077b5;
+  border-radius: 6px;
+  color: #0077b5;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.linkedin-btn:hover {
+  background-color: #0077b5;
+  color: #fff;
+}
+
+.timeline {
+  position: relative;
+  margin: 20px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background: #d0d0d0;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline-item {
+  padding: 20px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.timeline-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #0077b5;
+  top: 20px;
+  z-index: 1;
+}
+
+.timeline-item.left::before {
+  right: -10px;
+}
+
+.timeline-item.right::before {
+  left: -10px;
+}
+
+.role {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.duration {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.company {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #0077b5;
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.skills {
+  margin-top: 10px;
+}
+
+.skill {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 4px 6px 0 0;
+  font-size: 0.8rem;
+  background: #f0f7ff;
+  border: 1px solid #c6e2ff;
+  border-radius: 20px;
+  color: #0056a3;
+}
+
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 10px;
+  }
+  .timeline-item {
+    width: 100%;
+    padding-left: 40px;
+    text-align: left !important;
+  }
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+  .timeline-item::before {
+    left: 0;
+  }
+}

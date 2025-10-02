@@ -1,0 +1,49 @@
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .highlight {
+    color: #60a5fa;
+    font-weight: bold;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  
