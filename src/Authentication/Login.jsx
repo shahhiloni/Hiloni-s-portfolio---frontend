@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/Login.css";
+import "../CSS/Auth.css";
 
 const Login = ({ onClose }) => {
   return (

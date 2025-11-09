@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../CSS/Header.css";
 import Login from "../Authentication/Login";
-import Register  from "../Authentication/Register";
-
+import Register from "../Authentication/Register";
+  
 const Header = () => {
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);
@@ -11,8 +11,7 @@ const Header = () => {
     <>
       <header className="header">
         <div className="logo">Hiloni.dev</div>
-
-        <div className="search-container">
+<div className="search-container">
           <input
             type="text"
             className="search-input"
@@ -21,10 +20,17 @@ const Header = () => {
         </div>
 
         <div className="auth-buttons">
-          <button onClick={() => setShowLogin(true)} className="login-btn">
+          <button onClick={() => {
+            setShowLogin(true);
+            setShowRegister(false);
+          }} className="login-btn">
             Login
           </button>
-          <button onClick={() => setShowRegister(true)} className="signup-btn">
+
+          <button onClick={() => {
+            setShowRegister(true);
+            setShowLogin(false);
+          }} className="signup-btn">
             Sign Up
           </button>
         </div>

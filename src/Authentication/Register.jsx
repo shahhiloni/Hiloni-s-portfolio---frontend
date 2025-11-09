@@ -1,5 +1,5 @@
 import React from "react";
-import "../CSS/Register.css";
+import "../CSS/Auth.css";
 
 const Register = ({ onClose }) => {
   return (
